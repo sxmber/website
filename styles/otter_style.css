@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    /*font weight is how bold the text is */
+    font-weight: normal;
+    text-decoration: aqua underline wavy;
+    /*letter spacing is used for spacing between letters*/
+    letter-spacing: 15px;
+    font-size: 50px;
+    /*The fonts following the first are fallback fonts in case a browser doesn't support that font */
+    font-family: Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+    /*line height is spacing vertically*/
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
