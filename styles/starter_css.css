@@ -1,0 +1,113 @@
+/*universal selector */
+/** {
+    color: pink;
+}
+*/
+
+body {
+    background-color: #F5F5F5;
+}
+button {
+    font-size: 15px;
+    background-color: #087E8B;
+}
+
+h1, h2 {
+    color: #FF5A5F;
+}
+/* # is used to select an ID */
+#login {
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+}
+
+span {
+    color: #C1839F;
+}
+
+/* the "." selects a class */
+.tags {
+    background-color: #087E8B;
+    color: #F5F5F5;
+}
+
+.user a {
+    color: #087E8B;
+    text-decoration: none;
+    
+}
+/*DECENDENT SELECTORS: The space means we are selecting decendents of the first element 
+So, we are selecting a elements within spans.*/
+span a {
+    color: #3C3C3C;
+}
+
+/* All buttons within the post class will be selected */
+.post button {
+    color: #F5F5F5;
+
+}
+
+/* adjacent selector: Select only the buttons that are immediately precede
+by an <h2> */
+h2 + button {
+    font-weight: 700;
+}
+
+/* Direct child: select only the element that are direct children of a div or section
+Won't select any elements further down*/
+footer > a {
+    font-weight: 700;
+}
+
+/* Attribute selector: select all elements that have a specific attribute
+ex. Select all input elements with "type" attribute set to password*/ 
+input[type="password"] {
+    color: red;
+}
+
+/* pseudo classes: keyword added to a selector that specifies a special state
+of the selected elements
+:active
+:checked
+:first
+:first-child */
+
+.post button:hover {
+    background-color: red;
+    color: #3C3C3C;
+}
+
+.tags:hover {
+    color: #3C3C3C;
+    background-color: #FF5A5F;
+    text-decoration: underline;
+} 
+
+.user:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+}
+/* selects every 2 posts. */
+.post:nth-last-of-type(2n) {
+    background-color: #a3a3a3;
+}
+
+/* pseudo elements are more specific than pseudo classes 
+start with 2 "::"*/
+h1::first-letter {
+    color:#3C3C3C
+}
+
+p::selection{
+    color:#C1839F
+}
+
+/* !important will ignore specificity and make it win over everything else */ 
+#sign_up {
+    background-color: #C1839F !important;
+}
