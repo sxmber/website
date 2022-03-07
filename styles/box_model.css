@@ -1,0 +1,67 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: aqua;
+    width: 45px;
+    padding-left:100px;
+    padding-top: 50px;
+    margin: 0px;
+}
+
+/* border-width: controls the thickness of the border
+border-color: controls the color of the border
+border-style: control the line style */ 
+
+#one {
+    background-color: antiquewhite;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 5px;
+    /* margin is the space outside the border */
+    margin-left:50px;
+    margin-bottom: 50px;
+    
+}
+
+#two {background-color: aquamarine;
+    border-color: black;
+    border-width: 10px;
+    border-style: dotted;
+    box-sizing: border-box;
+    border-left-color: blueviolet;
+    margin: 100px;
+}
+
+#three {
+    background-color: brown;
+    border: 4px solid black;
+    border-left-color: purple;
+    /* border radius can be px and percentage */
+    border-radius: 50%;
+}
+
+/* padding is the space between content and border */
+
+/* applying 10 px of padding on all sides */
+#b1 {
+    padding: 10px;
+}
+/* applying padding vertical then horizonal */
+#b2 {
+    padding: 5px 10px;
+}
+/* applying padding top, horizontal then bottom */
+#b3 {
+    padding: 1px 2px 3px;
+}
+/* applying padding top, right, bottom then left. 
+THINK LIKE CLOCKWISE */
+#b4 {
+    padding: 10px 20px 30px 40px;
+}

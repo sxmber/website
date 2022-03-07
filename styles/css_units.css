@@ -1,0 +1,52 @@
+section {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+}
+/* percentages take a percentage of the parent element width and height */
+div {
+    background: yellow;
+    width: 50%;
+    height: 50%;
+}
+/* WITH FONT SIZE: em will be n * the size of its parent element
+ex. Font size of h2 is 2 times article(20*2=40px)
+WITH OTHER ELEMENTS: 1em is equal to the computed
+font size of the element itself 
+
+margin-left is equal to h2 size which is 40px
+If it was margin-left: 2em; then it would be 2*40.*/
+#ems h2 {
+    font-size: 2ems;
+    margin-left: 1em;
+}
+#ems p {
+    font-size: 0.8ems;
+}
+
+#ems {
+    font-size: 20px;
+}
+/* ems are usefull for scaling everything together */
+#ems button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: bisque;
+    color: black;
+}
+
+/*rems are relative to the root element as opposed to the
+parent element. When ems are used in a nested list
+it grows bigger and bigger with each nest */
+ul {
+    font-size: 2em;
+}
+
+#rems h2{
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1rem;
+}

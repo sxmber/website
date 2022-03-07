@@ -1,0 +1,36 @@
+/* headers are block elements. they take up the entire body */
+h1 {
+    background-color: goldenrod;
+    border: 1px solid black;
+    /* display: inline 
+    In a block element the conent respects the margin and padding.
+    It moves out of the way for it*/
+    padding: 50px;
+    margin:50px
+}
+/* span are in line. they do not cover the entire body
+display allows us to change the behavior of inline and block elements */
+body > span {
+    background-color: green;
+    border: 1px solid black;
+    display: block;
+}
+
+p #yo {
+    background-color: pink;
+    border: 1px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 50px;
+}
+
+div {
+    background-color: greenyellow;
+    border: 5px solid black;
+    height: 200px;
+    width: 200px;
+    /* inline-block allows block elements to act like inline elements
+    but with respect to height and width */
+    display: inline-block;
+    margin: 20px;
+}
