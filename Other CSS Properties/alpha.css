@@ -1,0 +1,19 @@
+section{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+/* alpha channel is transparency. Only affects the background color 
+and not any other element*/
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* opacity affect all elements. In this case, the text */
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}

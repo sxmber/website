@@ -1,0 +1,25 @@
+section{
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    /*background-image: url(https://pbs.twimg.com/media/E_JU3KtWUAExpAQ.jpg);
+    cover will fill the image and may stretch
+    to fit it.
+    contain will fill without stretching or cropping but may show
+    repeated image
+    background-size: cover;
+
+    sets where the image is being cropped
+    background-position: bottom;*/
+    
+    /* background combines all above elements into one 
+    if applying a cover or contain, it must be immediately after
+    postion*/
+    background: center/cover no-repeat url(https://pbs.twimg.com/media/E_JU3KtWUAExpAQ.jpg);
+}
+
+h1 {
+    font-size: 100px;
+    color: red;
+    transform: translateY(100px);
+}

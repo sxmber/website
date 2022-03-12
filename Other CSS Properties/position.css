@@ -1,0 +1,41 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: green;
+}
+/* the static position is unaffected by elements such as top, left, right and bottom */
+#static #middle {
+    position: static;
+    top: 100px;
+}
+/* relative can be moved around */
+#relative #middle {
+    position: relative;
+    /* top pushes the div down 100px */
+    top: 50px;
+    right: -100px;
+}
+/* absolute moves it out of the flow of the document.
+Other elements around it will change based on the 
+movement of the absolute div. It is positioned relative
+to its parents (section in this case) */
+#absolute #middle {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+}
+/* fixed is relative to its containing block. In this case
+the body. Is not relative to its parent
+ */
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
