@@ -10,5 +10,42 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    /* display:flex will "turn on" flex box */
+    display: flex;
+    /*flex direction controls which direction elements are flowing. 
+    row, column, row-reverse and column-reverse*/
+    flex-direction: row;
+    /*justify content will move items along the main axis(this could be x or y axis depending on flex direction)
+        . space-between
+    center, start, end */
+    justify-content: center;
+    /*flex wrap will dictate the direction
+    of elements according to the cross axis(opposite of 
+    the main axis from flex-direction.) */
+    flex-wrap: nowrap;
+    /*align items is similiar to justify content
+    but moves items along cross axis instead of main */
+    align-items: flex-start;
+    /*distributes space between cross axis. Only used when
+    wrapping is applied */
+    align-content: center;
+}
+
+#container div {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+
+div:nth-last-of-type(3){
+    /*align-self will move indiviudual items
+    based on cross axis */
+    align-self: center;
+}
+div:nth-last-of-type(2){
+    /*align-self will move indiviudual items
+    based on cross axis */
+    align-self: flex-end;
 }
 

@@ -1,0 +1,43 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /*height: 500px;*/
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    /*defines the initial size of an element before
+    added to a container. (along main axis) */
+    flex-basis: 200px;
+
+
+}
+
+div:nth-of-type(1){
+        /*flex-grow controls the amount of available
+    space an element should take up.
+    accepts a unit-less number value 
+    1 will fill the all available space in the container*/
+    flex-grow: 1;
+}
+div:nth-of-type(5){
+    /*this div will grow twice as big as the first div */
+    flex-grow: 2;
+    /*flex shrink will determine the rate an element shrinks.
+    0 means it will not shink ever */
+    flex-shrink: 2;
+}
