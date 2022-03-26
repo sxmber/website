@@ -38,6 +38,26 @@ div:nth-of-type(5){
     /*this div will grow twice as big as the first div */
     flex-grow: 2;
     /*flex shrink will determine the rate an element shrinks.
-    0 means it will not shink ever */
+    0 means it will never shink*/
     flex-shrink: 2;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    border: 5px solid black;
+}
+
+main .sidebar {
+    background-color: purple;
+    flex: 1 2 300px;
+    border: 2px solid white;
+    
+}
+main .maincontent {
+    background-color: green;
+    flex: 2 1 800px;
+
 }
